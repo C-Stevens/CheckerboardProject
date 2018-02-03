@@ -37,12 +37,7 @@ public class Checkerboard {
         this.boardHeight = boardHeight;
         this.lightColor = lightColor;
         this.darkColor = darkColor;
-        
-        System.out.print("lightColor: ");
-        System.out.print(lightColor.toString());
-        System.out.print(" // darkColor: ");
-        System.out.print(darkColor.toString());
-        System.out.println("");
+
         anchorPane = new AnchorPane();
     }
     
@@ -55,8 +50,6 @@ public class Checkerboard {
         
         rectangleWidth = Math.ceil(boardWidth / (double)numCols);
         rectangleHeight = Math.ceil(boardHeight / (double)numRows);
-        System.out.println("Board width: "+boardWidth+" Board height: "+boardHeight);
-        System.out.println("Rect width: "+rectangleWidth+" Rect height: "+rectangleHeight);
         for(int row=0; row < numRows; row++) {
             for(int col=0; col < numCols; col++) {
                 Rectangle rect = new Rectangle((rectangleWidth * col), (rectangleHeight * row), rectangleWidth, rectangleHeight);
