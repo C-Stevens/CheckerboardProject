@@ -1,5 +1,5 @@
 # NetBeans
-src/
+build/
 
 # Compiled class file
 *.class
